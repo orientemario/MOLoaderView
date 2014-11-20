@@ -1,6 +1,5 @@
 # MOLoaderView
 
-[![CI Status](http://img.shields.io/travis/Mario Oriente/MOLoaderView.svg?style=flat)](https://travis-ci.org/Mario Oriente/MOLoaderView)
 [![Version](https://img.shields.io/cocoapods/v/MOLoaderView.svg?style=flat)](http://cocoadocs.org/docsets/MOLoaderView)
 [![License](https://img.shields.io/cocoapods/l/MOLoaderView.svg?style=flat)](http://cocoadocs.org/docsets/MOLoaderView)
 [![Platform](https://img.shields.io/cocoapods/p/MOLoaderView.svg?style=flat)](http://cocoadocs.org/docsets/MOLoaderView)
