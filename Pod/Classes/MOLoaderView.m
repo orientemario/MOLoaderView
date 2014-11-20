@@ -303,7 +303,7 @@
     [_strokeLayer pop_removeAllAnimations];
     
 /* kPOPShapeLayerLineWidth property definition */
-/**/    NSString *kPOPShapeLayerLineWidth = [POPAnimatableProperty propertyWithName:@"shapeLayer.lineWidth" initializer:^(POPMutableAnimatableProperty *prop) {
+/**/    POPAnimatableProperty *kPOPShapeLayerLineWidth = [POPAnimatableProperty propertyWithName:@"shapeLayer.lineWidth" initializer:^(POPMutableAnimatableProperty *prop) {
 /**/        prop.readBlock = ^(CAShapeLayer *obj, CGFloat values[]) {
 /**/            values[0] = obj.lineWidth;
 /**/        };
@@ -312,17 +312,22 @@
 /**/        };
 /**/        prop.threshold = 0.01;
 /**/    }];
+/**/    POPBasicAnimation *thicknessAnimation = [POPBasicAnimation animation];
+/**/    thicknessAnimation.property = kPOPShapeLayerLineWidth;
 /* YOU CAN DELETE THIS PART AFTER POP RELEASES 1.0.8 WHICH INCLUDES THIS PROPERTY BY DEFAULT */
+
+/* AND UNCOMMENT THIS LINE */
+//    POPBasicAnimation *thicknessAnimation = [POPBasicAnimation animationWithPropertyNamed:kPOPShapeLayerLineWidth];
     
     POPBasicAnimation *progressAnimation = [POPBasicAnimation animationWithPropertyNamed:kPOPLayerRotation];
     POPBasicAnimation *strokeEndAnimation = [POPBasicAnimation animationWithPropertyNamed:kPOPShapeLayerStrokeEnd];
     POPBasicAnimation *strokeStartAnimation = [POPBasicAnimation animationWithPropertyNamed:kPOPShapeLayerStrokeStart];
-    POPBasicAnimation *thicknessAnimation = [POPBasicAnimation animationWithPropertyNamed:kPOPShapeLayerLineWidth];
     POPBasicAnimation *strokeOpacityAnimation = [POPBasicAnimation animationWithPropertyNamed:kPOPLayerOpacity];
     
     strokeOpacityAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
     strokeOpacityAnimation.fromValue = @0;
     strokeOpacityAnimation.toValue = @1;
+    
     
     thicknessAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
     thicknessAnimation.fromValue = @1;

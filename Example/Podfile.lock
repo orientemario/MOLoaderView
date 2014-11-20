@@ -1,5 +1,7 @@
 PODS:
-  - MOLoaderView (0.1.0)
+  - MOLoaderView (0.1.0):
+    - pop (~> 1.0)
+  - pop (1.0.7)
 
 DEPENDENCIES:
   - MOLoaderView (from `../`)
@@ -9,6 +11,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  MOLoaderView: aeb4e3b93dff2c75338b770d84a13108472b9ea2
+  MOLoaderView: 2cc653c4e029cf3ddf63a13e4f6180c2ed96370f
+  pop: 2f14a1ea61339767af9e66741b418c831b3844df
 
 COCOAPODS: 0.35.0.rc2
