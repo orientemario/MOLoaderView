@@ -245,6 +245,14 @@
     [self performSelector:@selector(waitingAnimation) withObject:nil afterDelay:0];
 }
 
+-(void)showWithZoomOut:(BOOL)zoomOut{
+    
+    UIWindow *window = [[[UIApplication sharedApplication] delegate] window];
+    
+    [window addSubview:self];
+    [self showAtPoint:CGPointMake(CGRectGetMidX(window.bounds), CGRectGetMidY(window.bounds)) withZoomOut:zoomOut];
+}
+
 -(void)updatePercentageLabelWithProgress:(CGFloat)progress
 {
     if(_percentageLabel){

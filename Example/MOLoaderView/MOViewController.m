@@ -93,7 +93,10 @@
                                           }];
     }
     
-    [self.loader showAtPoint:CGPointMake(self.view.center.x, self.view.frame.size.height/2) withZoomOut:self.showingZoomEffectSwitch.on];
+//    [self.loader showAtPoint:CGPointMake(self.view.center.x, self.view.frame.size.height/2) withZoomOut:self.showingZoomEffectSwitch.on];
+    
+    [self.loader show];
+    
     [self.view addSubview:self.loader];
     [self performSelector:@selector(startProgress) withObject:nil afterDelay:2];
 }
