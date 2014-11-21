@@ -17,6 +17,7 @@ typedef void(^LoaderViewBlock)();
 -(void)waitingAnimation;
 -(void)animateWithProgress:(CGFloat)progress;
 -(void)showAtPoint:(CGPoint)center withZoomOut:(BOOL)zoomOut;
+-(void)showWithZoomOut:(BOOL)zoomOut; // Presents the loader inside the current application window
 -(void)hide;
 
 -(instancetype)initWithRadius:(CGFloat)r strokeWidth:(CGFloat)width backgroundCircleColor:(UIColor *)backgroundCircleColor circleColor:(UIColor *)circleColor strokeColor:(UIColor *)strokeColor showPercentage:(BOOL)showPercentage withSymbol:(BOOL)showSymbol didCompleteBlock:(LoaderViewBlock)block;
