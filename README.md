@@ -4,6 +4,11 @@
 [![License](https://img.shields.io/cocoapods/l/MOLoaderView.svg?style=flat)](http://cocoadocs.org/docsets/MOLoaderView)
 [![Platform](https://img.shields.io/cocoapods/p/MOLoaderView.svg?style=flat)](http://cocoadocs.org/docsets/MOLoaderView)
 
+##Preview
+
+![ExtraLight](https://cloud.githubusercontent.com/assets/7912774/5070655/94856ca2-6e69-11e4-9a1d-ca2694a74312.gif) ![Dark](https://cloud.githubusercontent.com/assets/7912774/5070667/a8dc388e-6e69-11e4-8829-edeb0fd06f42.gif)
+
+
 ## Installation
 
 MOLoaderView is available through [CocoaPods](http://cocoapods.org). To install
@@ -66,10 +71,6 @@ And, once completed, hide it
 ```obj-c
 [loader hide];
 ```
-
-##Preview
-
-![ExtraLight](https://cloud.githubusercontent.com/assets/7912774/5070655/94856ca2-6e69-11e4-9a1d-ca2694a74312.gif) ![Dark](https://cloud.githubusercontent.com/assets/7912774/5070667/a8dc388e-6e69-11e4-8829-edeb0fd06f42.gif)
 
 ## Author
 
